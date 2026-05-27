@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta property="og:title" content="법무법인 하이로 개업 파티 초대장">
+<meta property="og:description" content="6월 18일 선릉역 케미스트리 와인바에서 함께해요 🍷">
+<title>법무법인 하이로 — 개업 파티 초대장</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --off-white: #f7f5f0;
+    --warm-gray: #e8e4dc;
+    --mid-gray: #a09b92;
+    --dark-gray: #3a3530;
+    --black: #0a0a0a;
+    --accent: #c8a96e;
+    --hero-bg: #1a0a2e;
+    --hero-top: #2d1055;
+    --gold: #e8c97a;
+    --rose: #e8789a;
+    --teal: #5ecfc0;
+  }
+  html { scroll-behavior: smooth; }
+  body { background: var(--off-white); font-family: 'DM Sans', sans-serif; color: var(--black); min-height: 100vh; -webkit-font-smoothing: antialiased; }
+
+  /* ── HERO B ── */
+  .hero {
+    background: var(--hero-bg);
+    padding: 3.5rem 1.5rem 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* 배경 원형 glow — CSS only, 고정 크기 */
+  .hero-glow1 { position:absolute; width:260px; height:260px; border-radius:50%; background:rgba(93,60,160,0.35); top:-80px; left:-60px; filter:blur(60px); pointer-events:none; }
+  .hero-glow2 { position:absolute; width:200px; height:200px; border-radius:50%; background:rgba(220,80,120,0.25); bottom:-60px; right:-40px; filter:blur(50px); pointer-events:none; }
+  .hero-glow3 { position:absolute; width:160px; height:160px; border-radius:50%; background:rgba(80,200,180,0.18); top:40%; left:60%; filter:blur(40px); pointer-events:none; }
+
+  /* 별 / confetti dots */
+  .star { position:absolute; border-radius:50%; background:#fff; opacity:0; animation:twinkle var(--d,2s) var(--delay,0s) infinite; }
+  @keyframes twinkle { 0%,100%{opacity:0} 50%{opacity:var(--op,0.6)} }
+
+  /* 상단 태그 */
+  .hero-tag {
+    display:inline-block;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:30px;
+    padding:5px 16px;
+    font-size:11px;
+    letter-spacing:0.14em;
+    color:rgba(255,255,255,0.6);
+    margin-bottom:2rem;
+    opacity:0;
+    animation:fadeUp 0.7s 0.1s ease forwards;
+  }
+
+  /* 와인잔 아이콘 */
+  .hero-icon {
+    font-size:40px;
+    display:block;
+    margin-bottom:1rem;
+    opacity:0;
+    animation:fadeUp 0.7s 0.2s ease forwards;
+  }
+
+  .hero-firm {
+    font-family:'Noto Serif KR',serif;
+    font-size:13px;
+    letter-spacing:0.22em;
+    color:rgba(255,255,255,0.45);
+    margin-bottom:0.5rem;
+    opacity:0;
+    animation:fadeUp 0.7s 0.3s ease forwards;
+  }
+
+  .hero-title {
+    font-family:'Playfair Display',serif;
+    font-size:34px;
+    font-weight:700;
+    color:#fff;
+    line-height:1.2;
+    margin-bottom:0.4rem;
+    opacity:0;
+    animation:fadeUp 0.7s 0.4s ease forwards;
+  }
+  .hero-title em {
+    font-style:italic;
+    font-weight:400;
+    color:var(--gold);
+  }
+
+  .hero-sub {
+    font-size:13px;
+    color:rgba(255,255,255,0.45);
+    margin-bottom:2rem;
+    opacity:0;
+    animation:fadeUp 0.7s 0.5s ease forwards;
+  }
+
+  /* 날짜 pill */
+  .hero-date-row {
+    display:flex;
+    gap:8px;
+    justify-content:center;
+    flex-wrap:wrap;
+    opacity:0;
+    animation:fadeUp 0.7s 0.6s ease forwards;
+  }
+  .hero-pill {
+    background:rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,0.18);
+    border-radius:30px;
+    padding:7px 16px;
+    font-size:12px;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    gap:6px;
+  }
+  .hero-pill span { opacity:0.55; }
+
+  @keyframes fadeUp { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:translateY(0)} }
+
+  /* ── SECTIONS ── */
+  .section { padding:2rem 1.5rem; border-bottom:1px solid var(--warm-gray); }
+  .section-label { font-size:10px; letter-spacing:0.18em; color:var(--mid-gray); text-transform:uppercase; margin-bottom:1.25rem; }
+
+  .info-row { display:flex; align-items:flex-start; gap:14px; margin-bottom:1.1rem; }
+  .info-row:last-child { margin-bottom:0; }
+  .info-icon-wrap { width:36px; height:36px; border-radius:10px; background:var(--warm-gray); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:17px; }
+  .info-main { font-size:14px; font-weight:500; color:var(--black); line-height:1.45; }
+  .info-sub  { font-size:12px; color:var(--mid-gray); margin-top:3px; }
+
+  .food-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+  .food-chip { background:var(--warm-gray); border-radius:10px; padding:10px 12px; font-size:13px; color:var(--dark-gray); display:flex; align-items:center; gap:7px; }
+  .food-chip.full { grid-column:1/-1; }
+
+  .msg-card { background:#fff; border-radius:14px; border:1px solid var(--warm-gray); padding:1.25rem; font-family:'Noto Serif KR',serif; font-size:14px; color:var(--dark-gray); line-height:2; }
+
+  .map-btn { display:flex; align-items:center; justify-content:space-between; background:#fff; border:1px solid var(--warm-gray); border-radius:12px; padding:14px 16px; text-decoration:none; color:var(--black); margin-top:1rem; transition:border-color 0.15s; }
+  .map-btn:hover { border-color:var(--accent); }
+  .map-btn-left { display:flex; align-items:center; gap:12px; }
+  .map-btn-icon { width:36px; height:36px; border-radius:10px; background:#03c75a; display:flex; align-items:center; justify-content:center; }
+  .map-btn-label { font-size:14px; font-weight:500; }
+  .map-btn-sub   { font-size:12px; color:var(--mid-gray); margin-top:2px; }
+  .map-arrow { font-size:18px; color:var(--mid-gray); }
+
+  /* RSVP */
+  .rsvp-wrap { padding:2rem 1.5rem; }
+  .rsvp-title { font-size:17px; font-weight:500; margin-bottom:0.25rem; }
+  .rsvp-sub   { font-size:13px; color:var(--mid-gray); margin-bottom:1.5rem; }
+  .choice-row { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:1.25rem; }
+  .choice-btn { padding:1rem 0.5rem; border-radius:12px; border:1px solid var(--warm-gray); background:#fff; font-family:'DM Sans',sans-serif; font-size:14px; color:var(--dark-gray); cursor:pointer; transition:all 0.18s; text-align:center; line-height:1.4; }
+  .choice-btn .cb-icon { font-size:22px; display:block; margin-bottom:5px; }
+  .choice-btn:hover { border-color:var(--accent); }
+  .choice-btn.active-yes { background:var(--hero-bg); border-color:var(--hero-bg); color:#fff; }
+  .choice-btn.active-no  { background:var(--warm-gray); border-color:var(--dark-gray); color:var(--dark-gray); }
+
+  .form-group { margin-bottom:0.85rem; }
+  .form-label { font-size:12px; color:var(--mid-gray); margin-bottom:0.35rem; display:block; letter-spacing:0.04em; }
+  input[type=text], input[type=tel], textarea {
+    width:100%; padding:10px 12px; border:1px solid var(--warm-gray); border-radius:10px;
+    background:#fff; font-family:'DM Sans',sans-serif; font-size:14px; color:var(--black);
+    outline:none; transition:border-color 0.15s; -webkit-appearance:none;
+  }
+  input:focus, textarea:focus { border-color:var(--accent); }
+  textarea { resize:none; height:80px; }
+
+  .count-section { margin-bottom:0.85rem; }
+  .count-row { display:flex; align-items:center; gap:10px; margin-top:0.35rem; }
+  .count-btn { width:36px; height:36px; border-radius:10px; border:1px solid var(--warm-gray); background:#fff; font-size:20px; color:var(--dark-gray); cursor:pointer; display:flex; align-items:center; justify-content:center; transition:background 0.12s; }
+  .count-btn:hover { background:var(--warm-gray); }
+  .count-num  { font-size:18px; font-weight:500; min-width:28px; text-align:center; }
+  .count-unit { font-size:13px; color:var(--mid-gray); }
+
+  .submit-btn { width:100%; padding:1rem; background:var(--hero-bg); color:#fff; border:none; border-radius:12px; font-family:'DM Sans',sans-serif; font-size:15px; font-weight:500; cursor:pointer; margin-top:0.5rem; letter-spacing:0.03em; transition:opacity 0.15s; }
+  .submit-btn:hover { opacity:0.82; }
+  .submit-btn:disabled { opacity:0.35; cursor:not-allowed; }
+
+  .success-wrap { padding:3rem 1.5rem; text-align:center; display:none; }
+  .success-icon-circle { width:64px; height:64px; border-radius:50%; background:var(--hero-bg); display:flex; align-items:center; justify-content:center; margin:0 auto 1.25rem; font-size:26px; color:#fff; }
+  .success-title { font-size:18px; font-weight:500; margin-bottom:0.4rem; }
+  .success-sub   { font-size:14px; color:var(--mid-gray); line-height:1.7; }
+
+  .resp-section { padding:0 1.5rem 2rem; display:none; }
+  .resp-header  { display:flex; align-items:baseline; justify-content:space-between; margin-bottom:0.85rem; }
+  .resp-heading { font-size:14px; font-weight:500; }
+  .resp-stats   { font-size:12px; color:var(--mid-gray); }
+  .resp-item { background:#fff; border:1px solid var(--warm-gray); border-radius:10px; padding:12px 14px; margin-bottom:6px; }
+  .resp-name-row { display:flex; align-items:center; gap:6px; font-size:14px; font-weight:500; flex-wrap:wrap; }
+  .badge { display:inline-block; font-size:10px; padding:2px 8px; border-radius:20px; }
+  .badge-yes { background:var(--hero-bg); color:#fff; }
+  .badge-no  { background:var(--warm-gray); color:var(--dark-gray); }
+  .resp-detail { font-size:12px; color:var(--mid-gray); margin-top:5px; display:flex; flex-direction:column; gap:2px; }
+
+  .footer { background:var(--hero-bg); padding:2rem 1.5rem; text-align:center; }
+  .footer-firm { font-size:13px; color:rgba(255,255,255,0.35); letter-spacing:0.12em; }
+</style>
+</head>
+<body>
+
+<!-- ── HERO B : 파티 분위기 ── -->
+<div class="hero">
+  <!-- glow blobs -->
+  <div class="hero-glow1"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-glow3"></div>
+
+  <!-- 별 파티클 (JS로 생성) -->
+  <div id="stars"></div>
+
+  <span class="hero-tag">✦ Opening Reception ✦</span>
+  <span class="hero-icon">🥂</span>
+  <p class="hero-firm">법무법인 하이로 · HIGHLAW</p>
+  <h1 class="hero-title">Party<br><em>Invitation</em></h1>
+  <p class="hero-sub">개업을 함께 축하해주세요</p>
+
+  <div class="hero-date-row">
+    <div class="hero-pill">📅 <span>|</span> 6월 18일 (수)</div>
+    <div class="hero-pill">🕕 <span>|</span> PM 6:00 – AM 2:00</div>
+    <div class="hero-pill">📍 <span>|</span> 선릉역 케미스트리</div>
+  </div>
+</div>
+
+<!-- 행사 정보 -->
+<div class="section">
+  <p class="section-label">행사 정보</p>
+  <div class="info-row">
+    <div class="info-icon-wrap">📍</div>
+    <div>
+      <p class="info-main">선릉역 와인바 '케미스트리'</p>
+      <p class="info-sub">대관 전체 독점 운영</p>
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-icon-wrap">🕕</div>
+    <div>
+      <p class="info-main">6월 18일 오후 6시 — 새벽 2시</p>
+      <p class="info-sub">중간 입장 · 조기 퇴장 모두 환영</p>
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-icon-wrap">🙌</div>
+    <div>
+      <p class="info-main">혼자 or 지인과 함께, 모두 환영</p>
+      <p class="info-sub">다양한 분야 네트워킹 자리</p>
+    </div>
+  </div>
+</div>
+
+<!-- 음식 & 음료 -->
+<div class="section">
+  <p class="section-label">음식 & 음료</p>
+  <div class="food-grid">
+    <div class="food-chip">🍽 케이터링 뷔페</div>
+    <div class="food-chip">🍷 레드 / 화이트</div>
+    <div class="food-chip">🥂 스파클링 와인</div>
+    <div class="food-chip">🍺 생맥주</div>
+    <div class="food-chip full">☕ 커피 · 차 · 음료</div>
+  </div>
+</div>
+
+<!-- 오시는 길 -->
+<div class="section">
+  <p class="section-label">오시는 길</p>
+  <div class="info-row" style="margin-bottom:0.75rem;">
+    <div class="info-icon-wrap">🚇</div>
+    <div>
+      <p class="info-main">2호선 · 분당선 선릉역</p>
+      <p class="info-sub">8번 출구 도보 3분</p>
+    </div>
+  </div>
+  <div class="info-row" style="margin-bottom:0.75rem;">
+    <div class="info-icon-wrap">🏠</div>
+    <div>
+      <p class="info-main">서울 강남구 테헤란로 415</p>
+      <p class="info-sub">와인바 케미스트리 (지하 1층)</p>
+    </div>
+  </div>
+  <a class="map-btn" href="https://map.naver.com/p/entry/place/1254183006?placePath=/home?bk_query=%EC%BC%80%EB%AF%B8%EC%8A%A4%ED%8A%B8%EB%A6%AC%20%EC%99%80%EC%9D%B8%EB%B0%94&entry=bmp&from=map&fromPanelNum=1&additionalHeight=76&timestamp=202605221552&locale=ko&svcName=map_pcv5&c=15.00,0,0,0,dh" target="_blank" rel="noopener">
+    <div class="map-btn-left">
+      <div class="map-btn-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="white"/>
+        </svg>
+      </div>
+      <div>
+        <p class="map-btn-label">네이버 지도로 보기</p>
+        <p class="map-btn-sub">와인바 케미스트리 선릉</p>
+      </div>
+    </div>
+    <span class="map-arrow">→</span>
+  </a>
+</div>
+
+<!-- 인사말 -->
+<div class="section" style="border-bottom:none;">
+  <p class="section-label">인사말</p>
+  <div class="msg-card">
+    안녕하세요 😊<br>
+    이번에 새롭게 <strong>법무법인 하이로(HIGHLAW)</strong>를 시작하게 되었습니다.<br><br>
+    딱딱한 행사보다는 좋은 사람들끼리 맛있는 음식과 와인을 즐기며 편하게 이야기 나누는 자리로 준비했습니다.<br><br>
+    잠깐 얼굴만 보고 가셔도 좋고, 늦게 오셔도 언제나 환영입니다 🍷
+  </div>
+</div>
+
+<!-- 사무실 방문 -->
+<div class="section">
+  <p class="section-label">개업식 전 사무실 방문</p>
+  <div class="msg-card" style="margin-bottom:1rem;">
+    파티 전에 새 사무실에 먼저 놀러오셔서 차 한잔 하고 가셔도 좋습니다 ☕<br>
+    편하게 들러주세요 😊
+  </div>
+  <div class="info-row" style="margin-bottom:0.75rem;">
+    <div class="info-icon-wrap">📅</div>
+    <div>
+      <p class="info-main">6월 16일 (화) · 17일 (수) · 18일 (목)</p>
+      <p class="info-sub">오후 1시 — 오후 6시</p>
+    </div>
+  </div>
+  <div class="info-row" style="margin-bottom:0.75rem;">
+    <div class="info-icon-wrap">🏢</div>
+    <div>
+      <p class="info-main">강남구 테헤란로 141, 15층</p>
+      <p class="info-sub">법무법인 하이로</p>
+    </div>
+  </div>
+  <a class="map-btn" href="https://naver.me/xuFcEyuG" target="_blank" rel="noopener">
+    <div class="map-btn-left">
+      <div class="map-btn-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="white"/></svg>
+      </div>
+      <div>
+        <p class="map-btn-label">네이버 지도로 보기</p>
+        <p class="map-btn-sub">법무법인 하이로 사무실</p>
+      </div>
+    </div>
+    <span class="map-arrow">→</span>
+  </a>
+</div>
+
+<!-- RSVP -->
+<div id="rsvp-area" class="rsvp-wrap">
+  <p class="rsvp-title">참석 여부 알려주세요</p>
+  <p class="rsvp-sub">간단히 남겨주시면 준비에 큰 도움이 됩니다</p>
+
+  <div class="choice-row">
+    <button class="choice-btn" id="btn-yes" onclick="selectAttend('yes')">
+      <span class="cb-icon">✓</span>참석할게요
+    </button>
+    <button class="choice-btn" id="btn-no" onclick="selectAttend('no')">
+      <span class="cb-icon">✗</span>아쉽지만 불참
+    </button>
+  </div>
+
+  <!-- 참석 필드 -->
+  <div id="yes-fields" style="display:none;">
+    <div class="form-group">
+      <label class="form-label">이름 *</label>
+      <input type="text" id="inp-name" placeholder="성함을 입력해주세요" />
+    </div>
+    <div class="form-group">
+      <label class="form-label">소속 *</label>
+      <input type="text" id="inp-org" placeholder="회사 / 단체 / 직업 등" />
+    </div>
+    <div class="form-group">
+      <label class="form-label">연락처</label>
+      <input type="tel" id="inp-phone" placeholder="010-0000-0000" inputmode="numeric" maxlength="13" oninput="formatPhone(this)" />
+    </div>
+    <div class="count-section">
+      <label class="form-label">동반 인원 (본인 포함)</label>
+      <div class="count-row">
+        <button class="count-btn" onclick="changeCount(-1)">−</button>
+        <span class="count-num" id="count-display">1</span>
+        <button class="count-btn" onclick="changeCount(1)">+</button>
+        <span class="count-unit">명</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">한마디 (선택)</label>
+      <textarea id="inp-msg" placeholder="기대되는 것, 반가운 인사 등 자유롭게 남겨주세요"></textarea>
+    </div>
+  </div>
+
+  <!-- 불참 필드 -->
+  <div id="no-fields" style="display:none;">
+    <div class="form-group">
+      <label class="form-label">이름 (선택)</label>
+      <input type="text" id="inp-name-no" placeholder="성함을 입력해주세요" />
+    </div>
+    <div class="form-group">
+      <label class="form-label">소속 (선택)</label>
+      <input type="text" id="inp-org-no" placeholder="회사 / 단체 / 직업 등" />
+    </div>
+    <div class="form-group">
+      <label class="form-label">연락처 (선택)</label>
+      <input type="tel" id="inp-phone-no" placeholder="010-0000-0000" inputmode="numeric" maxlength="13" oninput="formatPhone(this)" />
+    </div>
+    <div class="form-group">
+      <label class="form-label">한마디 (선택)</label>
+      <textarea id="inp-msg-no" placeholder="아쉬운 마음 전해주세요 😊"></textarea>
+    </div>
+  </div>
+
+  <button class="submit-btn" id="submit-btn" onclick="submitRSVP()" style="display:none;">전송하기</button>
+</div>
+
+<!-- SUCCESS -->
+<div class="success-wrap" id="success-wrap">
+  <div class="success-icon-circle" id="success-icon">✓</div>
+  <p class="success-title" id="success-title">참석 확정됐어요!</p>
+  <p class="success-sub" id="success-sub">6월 18일 선릉역 케미스트리에서 뵙겠습니다 🎉</p>
+</div>
+
+<div class="footer">
+  <p class="footer-firm">법무법인 하이로 · HIGHLAW</p>
+</div>
+
+<script>
+  /* 별 파티클 생성 */
+  (function() {
+    var container = document.getElementById('stars');
+    for (var i = 0; i < 28; i++) {
+      var s = document.createElement('div');
+      s.className = 'star';
+      var size = Math.random() * 3 + 1;
+      s.style.cssText = [
+        'width:' + size + 'px',
+        'height:' + size + 'px',
+        'top:' + Math.random() * 100 + '%',
+        'left:' + Math.random() * 100 + '%',
+        '--d:' + (Math.random() * 2 + 1.5) + 's',
+        '--delay:' + Math.random() * 3 + 's',
+        '--op:' + (Math.random() * 0.5 + 0.3)
+      ].join(';');
+      container.appendChild(s);
+    }
+  })();
+
+  function formatPhone(el) {
+    var v = el.value.replace(/\D/g, '').slice(0, 11);
+    if (v.length <= 3) el.value = v;
+    else if (v.length <= 7) el.value = v.slice(0,3) + '-' + v.slice(3);
+    else el.value = v.slice(0,3) + '-' + v.slice(3,7) + '-' + v.slice(7);
+  }
+
+  // ▼ Google Apps Script 배포 URL을 여기에 붙여넣기
+  var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwhkjGmbZLSpHF2XvQRXhiTLvVyp09RGMI_r5R8fJppn95IJrclU-N7Bn0TRXEearOTCg/exec';
+
+  var attendChoice = null;
+  var guestCount = 1;
+
+  function selectAttend(v) {
+    attendChoice = v;
+    document.getElementById('btn-yes').className = 'choice-btn' + (v === 'yes' ? ' active-yes' : '');
+    document.getElementById('btn-no').className  = 'choice-btn' + (v === 'no'  ? ' active-no'  : '');
+    document.getElementById('yes-fields').style.display = v === 'yes' ? 'block' : 'none';
+    document.getElementById('no-fields').style.display  = v === 'no'  ? 'block' : 'none';
+    document.getElementById('submit-btn').style.display = 'block';
+  }
+
+  function changeCount(d) {
+    guestCount = Math.max(1, Math.min(20, guestCount + d));
+    document.getElementById('count-display').textContent = guestCount;
+  }
+
+  function submitRSVP() {
+    var btn = document.getElementById('submit-btn');
+    var isYes = attendChoice === 'yes';
+    if (isYes) {
+      if (!document.getElementById('inp-name').value.trim()) { alert('이름을 입력해주세요.'); return; }
+      if (!document.getElementById('inp-org').value.trim())  { alert('소속을 입력해주세요.'); return; }
+    }
+    btn.disabled = true;
+    btn.textContent = '전송 중...';
+
+    var name  = isYes ? document.getElementById('inp-name').value.trim()     : document.getElementById('inp-name-no').value.trim();
+    var org   = isYes ? document.getElementById('inp-org').value.trim()      : document.getElementById('inp-org-no').value.trim();
+    var phone = isYes ? document.getElementById('inp-phone').value.trim()    : document.getElementById('inp-phone-no').value.trim();
+    var msg   = isYes ? document.getElementById('inp-msg').value.trim()      : document.getElementById('inp-msg-no').value.trim();
+
+    var payload = {
+      attend: attendChoice,
+      name:   name  || '익명',
+      org:    org   || '',
+      phone:  phone || '',
+      guests: isYes ? guestCount : 0,
+      msg:    msg   || ''
+    };
+
+    fetch(SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+    .then(function() { showSuccess(isYes, name); })
+    .catch(function() { showSuccess(isYes, name); });
+  }
+
+  function showSuccess(isYes, name) {
+    document.getElementById('rsvp-area').style.display    = 'none';
+    document.getElementById('success-wrap').style.display = 'block';
+    if (isYes) {
+      document.getElementById('success-title').textContent = '참석 확정됐어요! 🎉';
+      document.getElementById('success-sub').textContent   = (name || '') + '님 포함 ' + guestCount + '명, 6월 18일에 뵙겠습니다!';
+    } else {
+      document.getElementById('success-icon').textContent  = '💌';
+      document.getElementById('success-title').textContent = '응답해주셔서 감사해요';
+      document.getElementById('success-sub').textContent   = '다음에 꼭 함께해요 😊 응원해주셔서 감사합니다.';
+    }
+  }
+</script>
+</body>
+</html>
